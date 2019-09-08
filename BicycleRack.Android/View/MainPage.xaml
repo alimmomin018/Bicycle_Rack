@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Title="Location"             
+             x:Class="BicycleRack.MainPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Icon="nearByMe.png" Order="Primary" Activated="NearByMe"/>
+        <ToolbarItem Icon="add.png" Order="Primary" Activated="AddNewLocation"/>
+    </ContentPage.ToolbarItems>
+    <StackLayout>
+        <!-- Place new controls here -->        
+        <StackLayout BackgroundColor="White">
+            <SearchBar x:Name="searchLocation" 
+                   Placeholder="Search by location" 
+                   PlaceholderColor="LightGray" 
+                   TextColor="Black" 
+                   Margin="-10,0,0,0"
+                   TextChanged="searchLocation_TextChanged"></SearchBar>
+            <ListView x:Name="rackLocation"
+                  ItemsSource="{Binding RackLocation}"
+                  SeparatorVisibility="Default"
+                  ItemTapped="rackLocation_ItemTapped"
+                  HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <!--<ViewCell.View>
+                            <ContentView BackgroundColor="{Binding BackgroundColor}">-->
+                            <StackLayout Margin="10">
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="{Binding Address}" TextColor="Black" HorizontalOptions="StartAndExpand"/>
+                                    <Label Text="{Binding PostalCode}" TextColor="Black" HorizontalOptions="End"/>
+                                </StackLayout>
+                                <StackLayout IsVisible="{Binding IsVisible}" Spacing="1">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Capacity" HorizontalOptions="Start" TextColor="Black"/>
+                                        <Label Text="{Binding Capacity}" HorizontalOptions="End"/>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Sheltered by rain?" HorizontalOptions="Start" TextColor="Black"/>
+                                        <Label Text="{Binding Sheltered}" HorizontalOptions="End"/>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Notes" HorizontalOptions="Start" TextColor="Black"/>
+                                        <Label Text="{Binding Notes}" HorizontalOptions="End"/>
+                                    </StackLayout>
+                                    <Label Text="Get Location" TextColor="Blue" HorizontalOptions="Center">
+                                        <Label.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="GetLocation_Tapped"/>
+                                        </Label.GestureRecognizers>
+                                    </Label>
+                                </StackLayout>
+                            </StackLayout>
+                            <!--</ContentView>
+                        </ViewCell.View>-->
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>

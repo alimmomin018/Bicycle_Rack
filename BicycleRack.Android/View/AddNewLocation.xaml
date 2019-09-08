@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             Title="{Binding Title}"
+             x:Class="BicycleRack.View.AddNewLocation">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add" Order="Primary" Activated="ToolbarItem_Activated"/>
+    </ContentPage.ToolbarItems>
+    <Grid>
+        <maps:Map x:Name="Map" VerticalOptions="Fill" 
+                  HorizontalOptions="Fill"                  
+                  IsShowingUser="True"
+                  MapType="Street"/>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <Image Source="location.png" WidthRequest="50" HeightRequest="50"/>
+        </StackLayout>
+    </Grid>
+</ContentPage>

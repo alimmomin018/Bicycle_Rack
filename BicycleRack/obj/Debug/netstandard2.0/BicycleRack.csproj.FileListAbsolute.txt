@@ -1,0 +1,15 @@
+D:\Alim\Projects\BicycleRack\BicycleRack\BicycleRack\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\Alim\Projects\BicycleRack\BicycleRack\BicycleRack\obj\Debug\netstandard2.0\View\BicycleLocationPage.xaml.g.cs
+D:\Alim\Projects\BicycleRack\BicycleRack\BicycleRack\obj\Debug\netstandard2.0\View\MainPage.xaml.g.cs
+D:\Alim\Projects\BicycleRack\BicycleRack\BicycleRack\obj\Debug\netstandard2.0\View\NearByLocationPage.xaml.g.cs
+D:\Alim\Projects\BicycleRack\BicycleRack\BicycleRack\obj\Debug\netstandard2.0\BicycleRack.csproj.CoreCompileInputs.cache
+D:\Alim\Projects\BicycleRack\BicycleRack\BicycleRack\obj\Debug\netstandard2.0\BicycleRack.AssemblyInfoInputs.cache
+D:\Alim\Projects\BicycleRack\BicycleRack\BicycleRack\obj\Debug\netstandard2.0\BicycleRack.AssemblyInfo.cs
+D:\Alim\Projects\BicycleRack\BicycleRack\BicycleRack\bin\Debug\netstandard2.0\BicycleRack.deps.json
+D:\Alim\Projects\BicycleRack\BicycleRack\BicycleRack\bin\Debug\netstandard2.0\BicycleRack.dll
+D:\Alim\Projects\BicycleRack\BicycleRack\BicycleRack\bin\Debug\netstandard2.0\BicycleRack.pdb
+D:\Alim\Projects\BicycleRack\BicycleRack\BicycleRack\obj\Debug\netstandard2.0\BicycleRack.csprojAssemblyReference.cache
+D:\Alim\Projects\BicycleRack\BicycleRack\BicycleRack\obj\Debug\netstandard2.0\View\AddNewLocation.xaml.g.cs
+D:\Alim\Projects\BicycleRack\BicycleRack\BicycleRack\obj\Debug\netstandard2.0\XamlC.stamp
+D:\Alim\Projects\BicycleRack\BicycleRack\BicycleRack\obj\Debug\netstandard2.0\BicycleRack.dll
+D:\Alim\Projects\BicycleRack\BicycleRack\BicycleRack\obj\Debug\netstandard2.0\BicycleRack.pdb
